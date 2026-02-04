@@ -1,4 +1,4 @@
 qc.reset(2);
 qc.write(0);
-qc.cnot(0b10,0b01); // control y target (compuerta cnot)
+qc.cnot(0x2,0x1); // control y target (compuerta cnot)
 qc.read();

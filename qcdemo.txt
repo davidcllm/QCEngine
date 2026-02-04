@@ -1,0 +1,15 @@
+// se indica con cuantos qbits se va a trabajar
+//qc.reset(1);         
+
+// se indica que el valor inicial es 0
+//qc.write(0);
+
+// si tenenmos multiples qbits se indica el valor de cada uno
+//qc.reset(8);
+//qc.write(0b00000000)  // ejemplo en binario
+
+qc.reset(8);
+qc.write(0xFF);  //ejemplo en hexadecimal
+
+//qc.reset(8);
+//qc.write(255); // ejemplo en decimal

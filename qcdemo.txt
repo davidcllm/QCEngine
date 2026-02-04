@@ -2,4 +2,4 @@ qc.reset(2);
 qc.write(0b01); 
 var result = qc.read();
 
-qc.print('result: ' + result);
+qc.print('result: ' + result + '\n');

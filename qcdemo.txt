@@ -1,4 +1,4 @@
-qc.reset(1);
+qc.reset(2);
 qc.write(0);
 qc.phase(180,1); //compuerta z
 qc.read();

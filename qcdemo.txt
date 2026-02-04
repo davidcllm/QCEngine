@@ -1,4 +1,4 @@
-qc.reset(1);
-qc.write(0);
-qc.not(); //compuerta not
+qc.reset(2);
+qc.write(0b11);
+qc.not(0b01); //compuerta not
 qc.read();

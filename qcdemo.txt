@@ -1,5 +1,5 @@
-qc.reset(4);
-qc.write(0b0011); 
-var result = qc.read(0b0010); // leer un qubit en particular
+qc.reset(2);
+qc.write(0);
 
-qc.print('result: ' + result + '\n');
+qc.read(0b01); // Leer primero
+qc.read(0b10); // Leer segundo

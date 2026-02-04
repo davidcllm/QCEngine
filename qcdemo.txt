@@ -1,5 +1,4 @@
-qc.reset(2);
+qc.reset(1);
 qc.write(0);
-
-qc.read(0b01); // Leer primero
-qc.read(0b10); // Leer segundo
+qc.had(); //compuerta hardman
+qc.read();

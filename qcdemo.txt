@@ -1,3 +1,5 @@
-qc.reset(4);
-qc.write(0b0101); 
-qc.read();
+qc.reset(2);
+qc.write(0b01); 
+var result = qc.read();
+
+qc.print('result: ' + result);

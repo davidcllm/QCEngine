@@ -1,9 +1,15 @@
 qc.reset(2);
-qc.write(0b00);
-qc.had(0x1); // compuerta hardman
-qc.cnot(0x2,0x1); // control y target (compuerta cnot)
+qc.write(0b11);
+var first = qc.read(0b01);
+var second = qc.read(0b10);
+qc.print('first = ' + first + ' second = ' + second + '\n');
+
 qc.had(0x2);
-qc.phase(180, 0x1);
+qc.not(0x1); 
+qc.phase(180, 0b11);
+qc.cphase(180, 0x1|0x2);
+qc.cnot(0x1,0x2);
+
 
 var first = qc.read(0b01);
 var second = qc.read(0b10);

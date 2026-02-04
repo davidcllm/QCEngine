@@ -1,4 +1,6 @@
 qc.reset(2);
-qc.write(0);
+qc.write(0b11);
 qc.cnot(0x2,0x1); // control y target (compuerta cnot)
-qc.read();
+var first = qc.read(0b01);
+var second = qc.read(0b10);
+qc.print('first= ' + first + ' second= ' + second + '\n');
